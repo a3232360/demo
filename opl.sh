@@ -45,7 +45,7 @@ fi
 # 存储 JSON 参数
 json_param="$1"
 
-echo "keystore.json：$json_param"
+echo "keystore：$json_param"
 
 # 删除 machine-id 文件并重新生成
 rm -f /etc/machine-id
@@ -56,9 +56,9 @@ echo "正在从 GitHub 克隆 opl 仓库..."
 rm -rf /root/opl
 git clone https://github.com/a154225859/opl.git
 
-mkdir -p /root/opl/keystore
+mkdir -p /root/opl/.config
 
-echo "$json_param" > /root/opl/keystore/keystore.json
+echo "$json_param" > /root/opl/.config/keystore.json
 
 cd opl
 
