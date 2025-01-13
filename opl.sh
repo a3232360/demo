@@ -56,9 +56,9 @@ echo "正在从 GitHub 克隆 opl 仓库..."
 rm -rf /root/opl
 git clone https://github.com/a154225859/opl.git
 
-mkdir -p /root/opl
+mkdir -p /root/opl/keystore
 
-echo "$json_param" > /root/opl/keystore.json
+echo "$json_param" > /root/opl/keystore/keystore.json
 
 cd opl
 
